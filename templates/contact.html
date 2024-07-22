@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+
+    <div class="contact-container">
+        <img class="conatctImage" src="{{ url_for('static', filename='images/contactImageLeft.jpeg') }}" alt="Image" height="590px" width="400px">
+
+        <div class="left-section">
+            <h2>Send us a message</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="26f8993e-66f2-4779-a360-c29a82d1c01c">
+                <label class="form-label" for="name" >Name:</label>
+                <input class="form-input" type="text" id="name" name="name" required>
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+                <label class="form-label" for="message">Message:</label>
+                <textarea class="form-input" id="message" name="message" rows="4" required></textarea>
+                <div class="h-captcha" data-captcha="true"></div>
+                <button class="form-button" type="submit">Send Message</button>
+            </form>
+            
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+        </div>
+        <div class="right-section">
+            <h2>Contact us</h2>
+            <br>
+            <div class="contact-info">
+                <p><strong>Dev Bhoomi Uttarakhand Technical University</strong></p>
+                <p>Dehradun, India</p>
+            </div>
+            <div class="contact-info">
+                <p><strong>Sandeep Yadav</strong></br>
+                <a href="mailto:yadavsandy748@gmail.com" class="form-mail">yadavsandy748@gmail.com</a></p>
+                <p><strong>Shashi Ranjan</strong></br>
+                <a href="mailto:ranjanshashi739@gmail.com" class="form-mail">ranjanshashi739@gmail.com</a></p>
+                <p><strong>Sumit Kumar</strong></br>
+                <a href="mailto:sumitkumar20377@gmail.com" class="form-mail">sumitkumar20377@gmail.com</a></p>
+                <p><strong>Sumitesh Raj</strong></br>
+                <a href="mailto:sumiteshraj99@gmail.com" class="form-mail">sumiteshraj99@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    
+
+{% endblock %}

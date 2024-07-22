@@ -1,0 +1,130 @@
+{% extends "base.html" %} {% block content %}
+
+    <div class="icon-grid">
+        <!-- Icon item 1 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/apple.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Apple</p>
+            </div>
+            <div class="crop-details">
+                    <p>Apple Plant Disease</p>
+                    <span>Apple Scab</span><br>
+                    <span>Black Rot</span><br>
+                    <span>Ceder Apple Rust</span>
+            </div>
+        </div>
+        
+        <!-- Icon item 2 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/citrus.jpeg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Citrus</p>
+            </div>
+            <div class="crop-details">
+                    <p>Citrus Plant Disease</p>
+                    <span>Cranker</span><br>
+                    <span>Greening</span><br>
+                    <span>Gummosis</span><br>
+                    <span>Leaf Miner</span><br>
+                    <span>Lemon Butterfly</span>
+            </div>
+        </div>
+        
+        <!-- Icon item 3 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/corn.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Corn</p>
+            </div>
+            <div class="crop-details">
+                    <p>Corn Plant Disease</p>
+                    <span>Cercospora Leaf Spot Gray Leaf Spot</span><br>
+                    <span>Common Rust</span><br>
+                    <span>Northern Leaf Blight</span>
+            </div>
+        </div>
+
+        <!-- Icon item 4 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/grape.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Grape</p>
+            </div>
+            <div class="crop-details">
+                    <p>Grape Plant Disease</p>
+                    <span>Black Rot</span><br>
+                    <span>Esca (Black Measles)</span><br>
+                    <span>Leaf Blight</span>
+            </div>
+        </div>
+
+        <!-- Icon item 5 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/potato.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Potato</p>
+            </div>
+            <div class="crop-details">
+                    <p>Potato Plant Disease</p>
+                    <span>Early Blight</span><br>
+                    <span>Late Blight</span>
+            </div>
+        </div>
+
+
+        <!-- Icon item 6 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/rice.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Rice</p>
+            </div>
+            <div class="crop-details">
+                    <p>Rice Plant Disease</p>
+                    <span>Broen Spot</span><br>
+                    <span>Hispa</span><br>
+                    <span>Leaf Blast</span>
+            </div>
+        </div>
+
+
+        <!-- Icon item 7 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/tomato.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Tomato</p>
+            </div>
+            <div class="crop-details">
+                    <p>Tomato Plant Disease</p>
+                    <span>Bacterial Spot</span><br>
+                    <span>Early Blight</span><br>
+                    <span>Leaf Mold</span><br>
+                    <span>Septoria Leaf Spot</span><br>
+                    <span>Spider Mites Two Spotted Spider Mites</span><br>
+                    <span>Target Spot</span><br>
+                    <span>Tomato Mosaic Virus</span><br>
+                    <span>Tomato Yellow Leaf Curl Virus</span>
+            </div>
+        </div>
+
+        <!-- Icon item 8 -->
+        <div class="icon-item">
+            <div class="icon-item-img">
+                <img src="{{ url_for('static', filename='images/wheat.jpg') }}" style="mix-blend-mode: darken;" alt="Image">
+                <p class="crop-name">Wheat</p>
+            </div>
+            <div class="crop-details">
+                    <p>Wheat Plant Disease</p>
+                    <span>Brown Rust</span><br>
+                    <span>Loose Smut</span><br>
+                    <span>Mildew</span><br>
+                    <span>Septoria</span><br>
+                    <span>Stem Rust</span><br>
+                    <span>Yellow Rust</span>
+            </div>
+        </div>
+    </div>
+
+ 
+
+{% endblock %}
